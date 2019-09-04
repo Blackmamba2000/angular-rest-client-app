@@ -1,12 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center" *ngFor="let article of articles">
-  <h2>{{ article.title }}</h2>
-
-  <p>
-    {{ article.description }}
-  </p>
-    <a href="{{article.url}}">Read full article</a>
+<div style="text-align:center">
+  <h2>{{ mainTitle }}</h2>
 </div>
 
+<div class="card image-jpg" style="width:400px">
+  <img class="card-img-top" src="assets/images/Professional_Headshot.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Karlos King</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">Click Here ... </a>
+  </div>
+</div>
+
+<p></p>
 
 <router-outlet></router-outlet>

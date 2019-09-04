@@ -10,11 +10,12 @@ export class NewsComponent implements OnInit {
   articles;
 
   constructor(private apiService: ApiService) { }
+
   ngOnInit() {
     this.apiService.getNews().subscribe((data) => {
       console.log(data);
       // tslint:disable-next-line:no-string-literal
-      this.articles = data['data'];
+      this.articles = data['articles'];
     });
   }
 
